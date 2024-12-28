@@ -80,7 +80,7 @@ namespace Movie_Review_WebAPI.Controllers
         {
             ApiResponse response;
 
-            bool isDeleted = _movieCategoryRepository.Delete(movieID:movieid,categoryID:categoryid);
+            bool isDeleted = _movieCategoryRepository.Delete(movieID: movieid, categoryID: categoryid);
 
             if (!isDeleted)
             {
@@ -91,7 +91,6 @@ namespace Movie_Review_WebAPI.Controllers
             response = new ApiResponse("Movie category deleted successfully", 200);
             return Ok(response);
         }
-
 
 
   
